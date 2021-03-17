@@ -1,0 +1,346 @@
+:root {
+    --main-background: hsl(218, 28%, 13%);
+    --intro-and-email-background: hsl(217, 28%, 15%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background: var(--main-background);
+    list-style: none;
+
+    color: white;
+}
+
+header, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+
+    color: white;
+}
+
+button {
+    font-weight: bold;
+
+    color: white;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+
+    border: none;
+    border-radius: 1rem;
+
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg, hsl(176, 40%, 41%), hsl(198, 63%, 32%));
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    padding: 0 1rem;
+
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    margin-top: 1rem;  
+}
+
+.intro button {
+    margin-top: 1rem;
+
+    width: 130px;
+    height: 35px;
+}
+
+.intro-content {
+    width: 29vw;
+
+    padding-top: 1rem;
+}
+
+.intro-content p {
+    padding-top: 1rem;
+}
+
+.perks {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    column-gap: 10vw;
+	max-width: 70vw;
+
+	margin: 1vw auto;
+
+    align-items: center;
+    text-align: center;
+}
+
+.perk {
+    padding: 5rem 2rem;
+}
+
+.perk img, h3 {
+    padding-bottom: 1rem;
+}
+
+.perks-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 10rem 0;  
+}
+
+.summary {
+    width: 30vw;
+}
+
+.summary h2 {
+    font-size: 2rem;
+
+    padding-bottom: 1rem;
+}
+
+.summary p {
+    padding-bottom: 1rem;
+}
+
+.summary a {
+    color: hsl(198, 60%, 50%);
+}
+
+.summary a:hover {
+    color: hsl(176, 68%, 64%);
+}
+
+.summary img {
+    padding-left: .5rem;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 380px;
+    margin: 20px;
+
+    padding: 1rem;
+    border-radius: .25rem;
+
+    background: hsl(219, 30%, 18%);
+    color: rgb(230, 230, 230);
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    margin: .5rem;
+    border-radius: .25rem;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.author img {
+    margin: .8rem;
+}
+
+.job {
+    padding-top: 1rem;
+    color: hsl(176, 68%, 64%);
+}
+
+.box {
+    width: 60vw;
+    height: 25vh;
+    background: var(--intro-and-email-background);
+
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: .25rem;
+}
+
+.email {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box input {
+    border-radius: 99px;
+    border: none;
+
+    width: 50%;
+    height: 35px;
+
+    text-align: center;
+
+    margin: .7rem;
+}
+
+.box button {
+    width: 150px;
+    height: 40px;
+}
+
+
+.box p {
+    padding: 1rem;
+    width: 80%;
+}
+
+footer {
+    width: 100vw;
+
+
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+
+    background: hsl(216, 53%, 9%);
+}
+
+footer #logo {
+    width: 100px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.location {
+    width: 40%;
+}
+
+.location img {
+    padding-right: .5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact span {
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav div {
+    padding: 0 2rem;
+}
+
+.nav li {
+    cursor: pointer;
+
+    padding: .3rem 0;
+}
+
+.nav li:hover {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    header img {
+        width: 20vw;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .perks-summary {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 97%;
+    }
+
+    .perks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro img,
+    .perks-summary img:first-child {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .box {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .location,
+    .contact,
+    .nav {
+        padding: 1rem;
+    }
+}
